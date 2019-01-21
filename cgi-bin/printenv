@@ -25,4 +25,4 @@ foreach my $var (sort(keys(%ENV))) {
     print "${var}=\"${val}\"\n";
 }
 
-print "hello there\n"
+print "hello there freddy\n"
