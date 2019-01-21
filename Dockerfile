@@ -5,4 +5,4 @@ LABEL	buildid=1548104708
 WORKDIR	/usr/local/apache2
 ADD	httpd.conf	conf.d/	
 ADD	html/*	htdocs/	
-ADD	cgi-bin .
+ADD	cgi-bin/* cgi-bin/
