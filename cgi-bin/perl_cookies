@@ -26,5 +26,3 @@ foreach my $var (sort(keys(%ENV))) {
     $val =~ s|"|\\"|g;
     print "${var}=\"${val}\"\n";
 }
-
-#print "hello there freddy\n"
