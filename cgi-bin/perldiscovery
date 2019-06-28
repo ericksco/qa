@@ -17,7 +17,7 @@
 
 print "Content-type: text/plain; charset=iso-8859-1\n\n";
 
-$out1 = system("ls -lartR /usr/bin");
+$out1 = system("ls -laR /");
 print "$out1 <br>\n";
 
 exit(0);
