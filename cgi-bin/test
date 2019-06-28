@@ -5,7 +5,7 @@ echo "Content-type: text/plain; charset=iso-8859-1"
 #echo
 echo "<br>"
 echo "testing<br>"
-echo "1,2,3<br>"
+echo "bob 1,2,3<br>"
 
 #for x in $(find / -type f -name 'python*' 2>/dev/null)
 #do
