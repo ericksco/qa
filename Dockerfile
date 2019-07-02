@@ -1,7 +1,7 @@
 FROM	docker.io/httpd:latest
 MAINTAINER	bob@null.org
 EXPOSE 80
-LABEL	buildid="2019032100"
+LABEL	buildid="2019070100"
 #RUN	apt-get install -y bash
 WORKDIR	/usr/local/apache2
 ADD	httpd.conf	conf/	
