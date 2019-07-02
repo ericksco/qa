@@ -11,13 +11,15 @@ print "<html>\n";
 # html head
 print "<head>\n";
 
+print "<script src=\"js.js\"></script>\n";
+
 print "</head>\n";
 
 # html body
 print "<body>\n";
 
 print "<p>\n";
-print "hello there\n";
+print "<div id=bob>hi!</dev>\n";
 print "<br>\n";
 print "<br>\n";
 
