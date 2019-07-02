@@ -7,10 +7,8 @@
 
 <body>
 
-
 <h1>Javascript calculator test<h1>
 <br><br><br>
-
 
 <table>
 	<tr>
@@ -51,6 +49,11 @@
 	var nextoperator = 0;
 	var last = 0;
 	var buffer = 0;
+
+	var stringOne = "hello there";
+	var stringTwo = "hey dummy";
+	var myArray = ["Steve", "Ben", "Cory", "Katie", "Kevin"];
+	var concatString1 = "beginning " + stringOne + stringTwo + " end";
 </script>
 
 <script type="text/javascript">
@@ -123,6 +126,7 @@
 		saveoperator("none");
 		total = null;
 		cleardisplay = 1;
+		document.getElementById("mult").innerHTML = myArray;
 		return;
 	}
 
