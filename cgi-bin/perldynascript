@@ -36,7 +36,7 @@ print "var geo = [];\n";
 for $state (keys %myhash)
 {
 	print "var tmpstate = { state: \"$state\", cities: [] };\n";
-	for $city (values $myhash{$state})
+	for $city (@{$myhash{$state}})
 	{
 		print "tmpstate.cities.push($city)\n";
 	}
