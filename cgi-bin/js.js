@@ -4,7 +4,7 @@ var bob = "hello there";
 
 for (x = 0; x < geo.length; x++)
 {
-	window.alert("state = " + string(geo[x].state));
+	window.alert("state = " + tostring(geo[x].state));
 }
 
 document.getElementById("bob").value = bob;
