@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+## HTTP header
+print "Content-type: text/html; charset=iso-8859-1\n\n";
+
+## HTTP body
+
+# html 
+print "<html>\n";
+
+# html head
+print "<head>\n";
+
+print "</head>\n";
+
+# html body
+print "<body>\n";
+
+print "<p>\n";
+print "hello there\n";
+print "<br>\n";
+print "<br>\n";
+
+print "</body>\n";
+
+print "</html>\n";
+
+
+exit(0);
