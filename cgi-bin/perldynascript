@@ -53,7 +53,7 @@ print "</head>\n";
 print "<body>\n";
 
 print "<p>\n";
-print "<div id=bob>hi!</dev>\n";
+print "<div id=bob>hi!</div>\n";
 print "<br>\n";
 print "<br>\n";
 
