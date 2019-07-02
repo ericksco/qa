@@ -45,7 +45,7 @@ for $state (keys %myhash)
 
 print "</script>\n";
 
-print "<script src=\"js.js\"></script>\n";
+print "<script src=\"/js.js\"></script>\n";
 
 print "</head>\n";
 
