@@ -1,5 +1,16 @@
 #!/usr/bin/perl
 
+# build a hash of arrays
+%myhash = ();
+
+# populate with cities by state
+push(@{$myhash{"north dakota"}}, "fargo");
+push(@{$myhash{"north dakota"}}, "west fargo");
+push(@{$myhash{"minnesota"}}, "moorhead");
+push(@{$myhash{"minnesota"}}, "dilworth");
+
+#$city = ${$myhash{"north dakota"}}[1];
+
 ## HTTP header
 print "Content-type: text/html; charset=iso-8859-1\n\n";
 
@@ -10,6 +21,25 @@ print "<html>\n";
 
 # html head
 print "<head>\n";
+
+# dynamically create json objects for use in js.js
+print "<script type=\"text/javascript\">\n";
+
+# object
+# geo[0] = { state : "name", cities : [ cities ]}
+
+print "var geo = [];\n";
+for $state (keys %myhash)
+{
+	print "var tmpstate = { state: \"$state\", cities: [] };\n";
+	for $city (values $myhash{$state})
+	{
+		print "tmpstate.cities.push($city)\n";
+	}
+	print "geo.push(tmpstate)\n";
+}
+
+print "</script>\n";
 
 print "<script src=\"js.js\"></script>\n";
 

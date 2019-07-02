@@ -1,6 +1,14 @@
 
 var bob = "hello there";
+//document.getElementById("bob").value = bob;
+
+for (x = 0; x < geo.length; x++)
+{
+	window.alert("state = " + string(geo[x].state));
+}
+
 document.getElementById("bob").value = bob;
+
 
 /*
         var total = null;
