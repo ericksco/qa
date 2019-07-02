@@ -32,15 +32,15 @@ print "<script type=\"text/javascript\">\n";
 # object
 # geo[0] = { state : "name", cities : [ cities ]}
 
-print "var geo = [];\n";
+print "\tvar geo = [];\n";
 for $state (keys %myhash)
 {
-	print "var tmpstate = { state: \"$state\", cities: [] };\n";
+	print "\tvar tmpstate = { state: \"$state\", cities: [] };\n";
 	for $city (@{$myhash{$state}})
 	{
-		print "tmpstate.cities.push(\"$city\");\n";
+		print "\ttmpstate.cities.push(\"$city\");\n";
 	}
-	print "geo.push(tmpstate);\n";
+	print "\tgeo.push(tmpstate);\n";
 }
 
 print "</script>\n";
@@ -53,7 +53,7 @@ print "</head>\n";
 print "<body>\n";
 
 print "<p>\n";
-print "<div id=bob>hi!</div>\n";
+print "<div id=\"bob\">hi!</div>\n";
 print "<br>\n";
 print "<br>\n";
 
