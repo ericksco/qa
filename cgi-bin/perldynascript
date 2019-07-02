@@ -1,13 +1,17 @@
 #!/usr/bin/perl
 
+#use strict;
+
 # build a hash of arrays
 %myhash = ();
 
 # populate with cities by state
-push(@{$myhash{"north dakota"}}, "fargo");
-push(@{$myhash{"north dakota"}}, "west fargo");
-push(@{$myhash{"minnesota"}}, "moorhead");
-push(@{$myhash{"minnesota"}}, "dilworth");
+#push(@{$myhash{"north dakota"}}, "fargo");
+#push(@myhash{"north dakota"}, "west fargo");
+#push(@myhash{"minnesota"}, "moorhead");
+#push(@myhash{"minnesota"}, "dilworth");
+@myhash{"north dakota"} = [ "fargo", "west fargo"];
+@myhash{"minnesota"} = [ "dilworth", "moorhead"];
 
 #$city = ${$myhash{"north dakota"}}[1];
 
