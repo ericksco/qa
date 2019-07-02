@@ -7,4 +7,4 @@ WORKDIR	/usr/local/apache2
 ADD	httpd.conf	conf/	
 ADD	html/*	htdocs/	
 ADD	cgi-bin/* cgi-bin/
-#RUN	apt-cache search * > htdocs/packages
+RUN	apt-cache search python* > /usr/local/apache2/htdocs/packages

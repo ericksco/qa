@@ -3,13 +3,13 @@
 echo "Content-type: text/plain; charset=iso-8859-1"
 echo
 echo
-echo "testing\n"
-echo "bob 1,2,3\n"
-echo "\n"
+echo "testing"
+echo "bob 1,2,3"
+echo ""
 
 for x in $(find / -type f -name 'python*' 2>/dev/null)
 do
-  echo "$x\n"
+  echo "$x"
 done
 
 exit 0
