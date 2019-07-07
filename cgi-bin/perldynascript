@@ -43,16 +43,23 @@ for $state (keys %myhash)
 	print "\tgeo.push(tmpstate);\n";
 }
 
-
 print "</head>\n";
 
 # html body
 print "<body>\n";
 
+# simple div
 print "<p>\n";
 print "<div id=\"bob\">hi!</div>\n";
 print "<br>\n";
 print "<br>\n";
+
+# drop down #1, states (initially blank)
+print "<select name=\"states\">\n";
+print "\t<option value=\"\">select state</option>\n";
+print "</select>\n";
+
+# drop down #1, cities (initially blank)
 
 print "</script>\n";
 print "<script src=\"/js.js\"></script>\n";
