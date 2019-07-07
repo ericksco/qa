@@ -57,14 +57,15 @@ print "<br>\n";
 print "<br>\n";
 
 # drop down #1, states (initially blank)
-print "<select name=\"states\">\n";
-print "\t<option value=\"\">select state</option>\n";
+print "<select name=\"states\" id=\"states\">\n";
+print "\t<option value=\"\">state</option>\n";
 print "</select>\n";
 print "<br>\n";
+print "<br>\n";
 
-# drop down #1, cities (initially blank)
+# drop down #2, cities (initially blank)
 print "<select name=\"cities\">\n";
-print "\t<option value=\"\">select cities</option>\n";
+print "\t<option value=\"\">city</option>\n";
 print "</select>\n";
 
 print "</body>\n";
