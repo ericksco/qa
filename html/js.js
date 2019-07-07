@@ -14,5 +14,5 @@ function changeState()
 	window.alert("state changed to" + document.getElementById("states").value);
 }
 
-document.getElementById("bob").value = bob;
+document.getElementById("bob").innerHTML = bob;
 

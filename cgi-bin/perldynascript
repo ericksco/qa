@@ -57,7 +57,7 @@ print "<br>\n";
 print "<br>\n";
 
 # drop down #1, states (initially blank)
-print "<select name=\"states\" id=\"states\">\n";
+print "<select name=\"states\" id=\"states\" onchange=\"changeState()\">\n";
 print "\t<option value=\"\">state</option>\n";
 print "</select>\n";
 print "<br>\n";
