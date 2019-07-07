@@ -58,16 +58,21 @@ print "<br>\n";
 
 # drop down #1, states (initially blank)
 print "<select name=\"states\" id=\"states\" onchange=\"changeState()\">\n";
-print "\t<option value=\"default\">state</option>\n";
-print "\t<option value=\"1\">state</option>\n";
-print "\t<option value=\"2\">state</option>\n";
+
+# loop through and load up states
+print "\t<option value=\"none\">choose state</option>\n";
+
+for $state (keys %myhash)
+{
+	print "\t<option value=\"$state\">$state</option>\n";
+}
 print "</select>\n";
 print "<br>\n";
 print "<br>\n";
 
 # drop down #2, cities (initially blank)
 print "<select name=\"cities\">\n";
-print "\t<option value=\"\">city</option>\n";
+print "\t<option value=\"none\">choose state</option>\n";
 print "</select>\n";
 
 print "</body>\n";
