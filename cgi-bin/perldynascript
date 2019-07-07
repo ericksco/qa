@@ -43,9 +43,6 @@ for $state (keys %myhash)
 	print "\tgeo.push(tmpstate);\n";
 }
 
-print "</script>\n";
-
-print "<script src=\"/js.js\"></script>\n";
 
 print "</head>\n";
 
@@ -56,6 +53,9 @@ print "<p>\n";
 print "<div id=\"bob\">hi!</div>\n";
 print "<br>\n";
 print "<br>\n";
+
+print "</script>\n";
+print "<script src=\"/js.js\"></script>\n";
 
 print "</body>\n";
 
