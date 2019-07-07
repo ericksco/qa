@@ -11,8 +11,9 @@ for (x = 0; x < geo.length; x++)
 
 function changeState()
 {
-	window.alert("state changed to " + document.getElementById("states").innerHTML + " " + document.getElementById("bob").innerHTML);
+	var stateSelectObject = document.getElementById("states");
+	window.alert("state changed to " + stateSelectObject.value + " " + document.getElementById("bob").innerHTML);
 }
 
-document.getElementById("bob").innerHTML = mystring;
+document.getElementById("bob").innerHTML = "fred";
 
