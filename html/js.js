@@ -1,5 +1,5 @@
 
-var bob = "hello there";
+var mystring = "hello there";
 
 /*
 var x;
@@ -14,5 +14,5 @@ function changeState()
 	window.alert("state changed to" + document.getElementById("states").value);
 }
 
-document.getElementById("bob").innerHTML = bob;
+document.getElementById("bob").innerHTML = mystring;
 
