@@ -31,13 +31,16 @@ function changeState()
 	foundstate = -1;
 	for (x = 0; x < geo.length; x++)
 	{
-		if ( mystate === geo[x].state )
+		if ( mystate.toString === geo[x].state )
 		{
 			foundstate = x;
 		}
 	}
 
-	window.alert("found mystate " + mystate + " at index " + x);
+	if ( foundstate !== -1 )
+	{
+		window.alert("found mystate " + mystate + " at index " + x);
+	}
 
 	// use that index to iterate all cities, adding them to the cities select box
 	if ( foundstate === -1 )
