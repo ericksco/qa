@@ -12,7 +12,8 @@ for (x = 0; x < geo.length; x++)
 function changeState()
 {
 	var statesSelectObject = document.getElementById("states");
-	window.alert("state changed to " + statesSelectObject.value + " " + document.getElementById("bob").innerHTML);
+	var mystate = statesSelectObject.value;
+	window.alert("state changed to " + mystate + " " + document.getElementById("bob").innerHTML);
 
 	// empty out the cities select box
 	var cities = document.getElementById("cities");
@@ -25,12 +26,11 @@ function changeState()
 	
 	// add cities for the state into the cities select box
 	
-	// geo["north dakota"] = [ ];
-	
-	var mystate = statesSelectObject.value;
-	for (x = 0; x < geo[mystate].cities.length; x++)
+	for (x = 0; mystate != geo[x].state; x++);
+
+	for (y = 0; x < geo[x].cities.length; x++)
 	{
-		cities.add(geo[mystate].cities[x]);
+		cities.add(geo[x].cities[y]);
 	} 
 }
 
