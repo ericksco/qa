@@ -58,8 +58,8 @@ print "<br>\n";
 print "<br>\n";
 
 print "<script type=\"text/javascript\"\n";
-print "document.getElementById(\"bob\").innerHTML = \"fred\";";
-print "</script>\n";
+print "document.getElementById(\"bob\").innerHTML = \"fred\";\n";
+print "</script><br>\n";
 
 # drop down #1, states (initially blank)
 print "<select name=\"states\" id=\"states\" onchange=\"changeState()\">\n";
