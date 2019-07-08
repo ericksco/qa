@@ -57,7 +57,7 @@ print "<div id=\"bob\">hi!</div>\n";
 print "<br>\n";
 print "<br>\n";
 
-print "<script type=\"text/javascript\"\n";
+print "<script type=\"text/javascript\">\n";
 print "document.getElementById(\"bob\").innerHTML = \"fred\";\n";
 print "</script><br>\n";
 
