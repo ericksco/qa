@@ -71,7 +71,7 @@ print "<br>\n";
 print "<br>\n";
 
 # drop down #2, cities (initially blank)
-print "<select name=\"cities\">\n";
+print "<select name=\"cities\" id=\"cities\">\n";
 print "\t<option value=\"none\">choose state</option>\n";
 print "</select>\n";
 
