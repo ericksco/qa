@@ -2,7 +2,6 @@
 var mystring = "hello there";
 var foundstate = -1;
 
-document.getElementById("bob").innerHTML = "fred";
 
 /*
 var x;
@@ -53,4 +52,4 @@ function changeState()
 	}
 }
 
-
+//document.getElementById("bob").innerHTML = "fred";
