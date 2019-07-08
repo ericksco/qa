@@ -26,8 +26,12 @@ function changeState()
 	
 	// add cities for the state into the cities select box
 	
+	// find the index into the array for geo representing the state
 	for (x = 0; mystate != geo[x].state; x++);
 
+	window.alert("found mystate " + mystate + " at index " + x);
+
+	// use that index to iterate all cities, adding them to the cities select box
 	for (y = 0; x < geo[x].cities.length; x++)
 	{
 		cities.add(geo[x].cities[y]);
