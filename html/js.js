@@ -36,7 +36,7 @@ function changeState()
 		if ( mystate.toString === geo[x].state.toString )
 		{
 			foundstate = x;
-			window.alert("found mystate " + mystate + " at index " + x);
+			window.alert("found mystate " + mystate + " at index " + x + " value = " + geo[x].state.toString);
 		}
 	}
 
