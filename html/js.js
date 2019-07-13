@@ -48,7 +48,12 @@ function changeState()
 		for (y = 0; y < blahobj.length; y++)
 		{
 			console.log(blahobj[y]);
-			cities.add(blahobj[y]);
+
+			var newoption = document.createElement("option");
+			newoption.text = blahobj[y];
+			newoption.value = 99;
+
+			cities.add(newoption);
 		} 
 	}
 	else
