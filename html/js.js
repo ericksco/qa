@@ -62,4 +62,4 @@ function changeState()
 	}
 }
 
-//document.getElementById("bob").innerHTML = "fred";
+document.getElementById("bob").innerHTML = "fred";
