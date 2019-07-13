@@ -16,7 +16,7 @@ function changeState()
 	var statesSelectObject = document.getElementById("states");
 	var mystate = statesSelectObject.value;
 
-	window.alert("state changed to " + mystate + " " + document.getElementById("bob").innerHTML);
+	// window.alert("state changed to " + mystate + " " + document.getElementById("bob").innerHTML);
 
 	// empty out the cities select box
 	var cities = document.getElementById("cities");
@@ -32,12 +32,12 @@ function changeState()
 	
 	// find the index into the array for geo representing the state
 	foundstate = -1;
-	for (x = 0; x < geo.length; x++)
+	for (x = 0; x < geo.length && foundstate == -1; x++)
 	{
 		if ( mystate === geo[x].state )
 		{
 			foundstate = x;
-			console.log("found mystate " + mystate + " at index " + x + " value = " + geo[x].state);
+			// console.log("found mystate " + mystate + " at index " + x + " value = " + geo[x].state);
 			console.log(geo[x]);
 		}
 	}
@@ -51,14 +51,14 @@ function changeState()
 
 			var newoption = document.createElement("option");
 			newoption.text = blahobj[y];
-			newoption.value = 99;
+			newoption.value = blahobj[y];
 
 			cities.add(newoption);
 		} 
 	}
 	else
 	{
-		window.alert("didn't find mystate");
+		console.log("didn't find mystate");
 	}
 }
 

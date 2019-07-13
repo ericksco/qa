@@ -65,7 +65,7 @@ print "</script><br>\n";
 print "<select name=\"states\" id=\"states\" onchange=\"changeState()\">\n";
 
 # loop through and load up states
-print "\t<option value=\"none\">choose state</option>\n";
+print "\t<option value=\"none\" selected>choose state</option>\n";
 
 for $state (keys %myhash)
 {
@@ -77,7 +77,7 @@ print "<br>\n";
 
 # drop down #2, cities (initially blank)
 print "<select name=\"cities\" id=\"cities\">\n";
-print "\t<option value=\"none\">choose state</option>\n";
+print "\t<option value=\"none\" selected>choose state</option>\n";
 print "</select>\n";
 
 print "</body>\n";
