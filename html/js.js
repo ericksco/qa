@@ -15,6 +15,7 @@ function changeState()
 {
 	var statesSelectObject = document.getElementById("states");
 	var mystate = statesSelectObject.value;
+
 	window.alert("state changed to " + mystate + " " + document.getElementById("bob").innerHTML);
 
 	// empty out the cities select box
@@ -23,6 +24,7 @@ function changeState()
 	var x;
 	for (x = 0; x < cities.length; x++)
 	{
+		console.log("removing cities index: " + x);
 		cities.remove(x);
 	}
 	
@@ -32,14 +34,15 @@ function changeState()
 	foundstate = -1;
 	for (x = 0; x < geo.length; x++)
 	{
-		if ( mystate.toString === geo[x].state.toString )
+		if ( mystate === geo[x].state )
 		{
 			foundstate = x;
-			window.alert("found mystate " + mystate + " at index " + x + " value = " + geo[x].state.toString);
+			console.log("found mystate " + mystate + " at index " + x + " value = " + geo[x].state);
+			console.log(geo[x]);
 		}
 	}
 
-	if ( foundstate !== -1 )
+	if ( foundstate != -1 )
 	{
 		for (y = 0; y < geo[foundstate].cities.length; y++)
 		{
