@@ -44,10 +44,11 @@ function changeState()
 
 	if ( foundstate != -1 )
 	{
-		for (y = 0; y < geo[foundstate].cities.length; y++)
+		var blahobj = geo[foundstate].cities;
+		for (y = 0; y < blahobj.length; y++)
 		{
-			console.log(geo[foundstate].cities);
-			cities.add(geo[foundstate].cities.[y]);
+			console.log(blahobj[y]);
+			cities.add(blahobj[y]);
 		} 
 	}
 	else
