@@ -46,7 +46,8 @@ function changeState()
 	{
 		for (y = 0; y < geo[foundstate].cities.length; y++)
 		{
-			cities.add(geo[foundstate].cities[y]);
+			console.log(geo[foundstate].cities);
+			cities.add(geo[foundstate].cities.[y]);
 		} 
 	}
 	else
