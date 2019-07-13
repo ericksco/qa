@@ -27,6 +27,16 @@ function changeState()
 		console.log("removing cities index: " + x);
 		cities.remove(x);
 	}
+
+	console.log("after cities purge, length now = " + cities.length);
+	if ( cities.length > 0 )
+	{
+		for (x = 0; x < cities.length; x++)
+		{
+			console.log("remaining cities: ");
+			console.log(cities[x].text);
+		}
+	}
 	
 	// add cities for the state into the cities select box
 	
