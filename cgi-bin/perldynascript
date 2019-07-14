@@ -51,9 +51,10 @@ print "</head>\n";
 # html body
 print "<body>\n";
 
-print "<script type=\"text/javascript\">\n";
-print "document.getElementById(\"bob\").innerHTML = \"fred\";\n";
-print "</script><br>\n";
+# this won't work because the javascript is run ahead of the element being defined
+#print "<script type=\"text/javascript\">\n";
+#print "document.getElementById(\"bob\").innerHTML = \"fred\";\n";
+#print "</script><br>\n";
 
 # simple div
 print "<p>\n";

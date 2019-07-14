@@ -1,18 +1,8 @@
 
-var mystring = "hello there";
-var foundstate = -1;
-
-
-/*
-var x;
-for (x = 0; x < geo.length; x++)
-{
-	window.alert("state = " + geo[x].state);
-}
-*/
 
 function changeState()
 {
+	var foundstate = -1;
 	console.log("called changeState()");
 
 	var statesSelectObject = document.getElementById("states");
@@ -23,15 +13,15 @@ function changeState()
 	// empty out the cities select box
 	var cities = document.getElementById("cities");
 	
-	var x;
 	console.log("beginning cities purge, length now = " + cities.length);
-	for (x = 0; x < cities.length; x++)
+	while (cities.length > 0)
 	{
-		console.log("removing cities index: " + x);
-		cities.remove(x);
+		console.log("removing cities index 0");
+		cities.remove(0);
 	}
 	console.log("after cities purge, length now = " + cities.length);
 
+	var x;
 	if ( cities.length > 0 )
 	{
 		for (x = 0; x < cities.length; x++)
@@ -44,7 +34,6 @@ function changeState()
 	// add cities for the state into the cities select box
 	
 	// find the index into the array for geo representing the state
-	foundstate = -1;
 	for (x = 0; x < geo.length && foundstate == -1; x++)
 	{
 		if ( mystate === geo[x].state )
@@ -75,4 +64,5 @@ function changeState()
 	}
 }
 
+// this line will only work provided the javascript was called after the element was defined
 document.getElementById("bob").innerHTML = "fred";
