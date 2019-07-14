@@ -51,15 +51,15 @@ print "</head>\n";
 # html body
 print "<body>\n";
 
+print "<script type=\"text/javascript\">\n";
+print "document.getElementById(\"bob\").innerHTML = \"fred\";\n";
+print "</script><br>\n";
+
 # simple div
 print "<p>\n";
 print "<div id=\"bob\">hi!</div>\n";
 print "<br>\n";
 print "<br>\n";
-
-#print "<script type=\"text/javascript\">\n";
-#print "document.getElementById(\"bob\").innerHTML = \"fred\";\n";
-#print "</script><br>\n";
 
 # drop down #1, states (initially blank)
 print "<select name=\"states\" id=\"states\" onchange=\"changeState()\">\n";
