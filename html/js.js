@@ -13,6 +13,8 @@ for (x = 0; x < geo.length; x++)
 
 function changeState()
 {
+	console.log("called changeState()");
+
 	var statesSelectObject = document.getElementById("states");
 	var mystate = statesSelectObject.value;
 
@@ -22,13 +24,14 @@ function changeState()
 	var cities = document.getElementById("cities");
 	
 	var x;
+	console.log("beginning cities purge, length now = " + cities.length);
 	for (x = 0; x < cities.length; x++)
 	{
 		console.log("removing cities index: " + x);
 		cities.remove(x);
 	}
-
 	console.log("after cities purge, length now = " + cities.length);
+
 	if ( cities.length > 0 )
 	{
 		for (x = 0; x < cities.length; x++)
